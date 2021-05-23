@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Upcoming Session</ion-title>                           
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <figure>
+    <img src="/assets/images/upcoming-session-img.png" alt="">
+  </figure>
+  <div class="ion-text-center">
+    <h5>CRACKING THE GD</h5>
+    <h5 class="text-blue">MOCK INTERVIEW</h5>
+  </div>
+  <div class="timing-info">
+    <ul>
+      <li>
+        <p>
+          <span><img src="/assets/images/timing.png" alt="" slot="start"></span>
+          Start Time
+        </p>
+        <h3>12:30 PM</h3>
+        <p>09-Septemnber-2020</p>
+      </li>
+      <li>
+        <p>
+          <span><img src="/assets/images/timing.png" alt="" slot="start"></span>
+          Total Time
+        </p>
+        <h3>3 Hrs</h3>
+      </li>
+    </ul>
+    <div class="checkmark green">
+      <ion-icon name="checkmark-outline"></ion-icon>
+    </div>
+  </div>
+  <ion-card class="card">
+    <h6>Purpose of Upcoming Session</h6>
+    <ul class="pointer-list scroll-container">
+      <li>
+        <p>Notes are text elements generally used as subtitles that provide more information.</p>
+      </li>
+      <li>
+        <p>Notes are text elements generally used as subtitles that provide more information.</p>
+      </li>
+      <li>
+        <p>Notes are text elements generally used as subtitles that provide more information.</p>
+      </li>
+      <li>
+        <p>Notes are text elements generally used as subtitles that provide more information.</p>
+      </li>
+    </ul>
+  </ion-card>
+  <ion-buttons class="btn-group">
+    <button type="submit" class="ion-activatable ripple-parent">RESCHEDULE
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </button> 
+    <button type="submit" class="ion-activatable ripple-parent" [routerLink]="['/upcoming-session2']">ACCEPT
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </button> 
+  </ion-buttons>
+</ion-content>

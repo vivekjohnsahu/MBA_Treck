@@ -1,0 +1,59 @@
+.leaderboard-wrapper{position: relative;}
+.leaderboard-wrapper>img{position: absolute;    top: 0;    left: 0;}
+.leader-info{
+    background-image: linear-gradient(160deg, #235291, #0faeb2);
+    position: relative;    padding: 8px;    border-radius: 8px;    text-align: center;   
+    margin: 15px 0;}
+.leader-info .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #1b7189;
+    margin-bottom: 5px;
+}
+.info .profile-img{width: 50px;}
+.info h2, .info h5{margin: 0; color: white;}
+.info h2 span{font-size: 16px;}
+.filters{margin: 0;}
+.filters li{display: inline-block;}
+.filters li a{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    padding: 5px 2px 5px 7px;
+    display: block;
+    font-family: "AvenirLTStd-Roman";
+    position: relative;
+}
+.filters li a ion-icon{vertical-align: middle;}
+.filters li+li a{border-left: 2px solid #1b7189;}
+.leaderboard ion-item-divider{padding: 10px 0;    border-bottom: 1px solid #e5e5e5;}
+.leaderboard .fixed-width{width: 25px;}
+.leaderboard .profile-img{    width: 42px;    margin: 0 10px;}
+.leaderboard p{margin: 0; font-size: 12px;}
+.leaderboard h5{font-weight: bold;    margin: 3px 0 0 ; font-size: 17px;}
+.leaderboard h6{color: rgb(0 0 0 / 0.6);    margin: 3px 0;    font-weight: 600;font-size: 15px;}
+.leaderboard ion-item-group ion-item-divider:first-child h6.points{color: #fed700;}
+.leaderboard ion-item-group ion-item-divider:nth-child(2) h6.points{color: #ff672f;}
+.leaderboard ion-item-group ion-item-divider:nth-child(3) h6.points{color: #8ea0e8;}
+.leaderboard h6.points a{text-decoration: underline;    font-size: 12px;
+    font-weight: normal;
+    vertical-align: text-top;
+    color: initial;}
+.leaderboard ion-item-group ion-item-divider{
+    [slot="end"] {
+        margin-inline-start: 0;
+    }
+}
+.color-bar{
+    height: 25px;
+    width: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    min-width: auto;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+.color-bar[color="success"]{
+    background-color: #1EAD4D;
+}

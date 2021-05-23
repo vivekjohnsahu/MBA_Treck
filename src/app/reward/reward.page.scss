@@ -1,0 +1,23 @@
+.button-pills button{margin: 10px 5px;}
+.reward h6{color: rgb(0 0 0 / 0.8); margin-bottom: 5px;}
+
+.reward-card h5, .reward-card p{margin: 0;}
+ion-card-header{padding: 8px 12px;}
+.reward-card ion-item-divider{
+    align-items: flex-start;
+    padding: 12px 12px 22px;
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+}
+.color-bar{
+    height: 25px;
+    width: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    min-width: auto;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+.color-bar[color="success"]{
+    background-color: #1EAD4D;
+}

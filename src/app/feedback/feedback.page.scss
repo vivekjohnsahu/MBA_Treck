@@ -1,0 +1,34 @@
+.contact-top{
+    background-image: url('../../assets/images/feedback-top.jpg'); 
+    background-size: cover;
+    min-height: 160px;
+    padding-top: 56px;
+}
+.contact-wrapper{
+    margin-top: -60px;
+    padding-top: 40px;
+}
+.contact-wrapper form .form-group{margin: 0 0 25px;}
+
+form h5{color: black;   text-align: center;     font-weight: 600;}
+ion-item ion-label, ion-label{
+    color: rgb(0 0 0 / 0.6);
+    font-family: "AvenirLTStd-Roman";
+    font-size: 15px !important;
+    font-weight: 600;
+}
+
+ion-radio-group ion-item::part(native){    padding-inline-start: 0;}
+ion-radio-group ion-item::part(native){
+    .item-highlight {
+        height: 0px;
+    }
+}
+
+ion-radio-group{display: flex;      margin: 10px 0 40px;}
+ion-radio-group ion-item ion-radio{   width: 45px;    height: 100%; }
+ion-radio-group ion-item ion-radio::part(container) {
+    border-color: transparent;
+}
+ion-radio-group ion-item ion-radio.radio-checked::part(container){opacity: 0;}
+ion-radio-group ion-item ion-label{position: absolute;}

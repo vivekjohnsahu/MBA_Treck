@@ -1,0 +1,37 @@
+/*Css specific for Homepage*/
+.login-wrapper{    padding: 40px;  padding-top: 0;}
+
+.login-wrapper h1{    position: relative;    margin: 0;    padding-bottom: 8px;
+    background: -webkit-linear-gradient( #12A3AE, #246C9E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+.login-wrapper h1:after{
+    position: absolute;
+    content: "";
+    background: #1e6a9c;
+    height: 4px;
+    width: 45px;
+    border-radius: 15px;
+    bottom: 0;
+    left: 0;
+}
+
+.login-form{    margin: 40px 0;}
+
+.social-signup-list ion-col{position: relative;     padding: 0;}
+.social-signup-list ion-col+ion-col:before{
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 1px;
+    background: #cccccc;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.social-signup-list ion-col img{width: 30px;}
+
+.gradient-btn {
+    margin: 40px auto;
+}

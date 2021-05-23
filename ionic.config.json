@@ -1,0 +1,7 @@
+{
+  "name": "mba_trek",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

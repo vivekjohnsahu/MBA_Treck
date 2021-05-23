@@ -1,0 +1,96 @@
+<ion-content class="leaderboard-wrapper ion-padding">
+  <img src="../../assets/images/leaderboard-top.png" alt="">
+  <ion-toolbar class="white">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Leaderboard</ion-title>
+  </ion-toolbar>
+
+  <div class="leader-info">
+    <div class="info">
+      <img src="../../assets/images/leaderboard-trophy.png" alt="">
+      <div>
+        <img src="../../assets/images/profile-img.png" alt="" class="profile-img">
+        <h5>Deepak</h5>
+      </div>
+      <h2>450 <span>CCs</span></h2>
+    </div>
+    <ul class="filters">
+      <li><a>Institute<ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+      <li><a>Specialization<ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+      <li><a (click)="CreatePopover()">Other Filters<ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+    </ul>
+  </div>
+
+  <!-- <ion-button color="danger" (click)="CreatePopover()">Open Popover</ion-button> -->
+  <div class="leaderboard">
+    <ion-item-group>
+      <ion-item-divider class="ion-no-padding">
+        <div slot="end">
+          <p>09 Apr 2020</p>
+          <h5>200 <span class="text-light">CCs</span></h5>
+        </div>          
+        <div class="fixed-width"><img src="../../assets/images/gold-badge.png" alt=""></div>
+        <img src="../../assets/images/profile-img.png" alt="" class="profile-img">
+        <div>
+          <h6>Bhavesh Joshi</h6>
+          <h6 class="points">80/500</h6>
+        </div>
+      </ion-item-divider>
+
+      <ion-item-divider class="ion-no-padding">
+        <div slot="end">
+          <p>09 Apr 2020</p>
+          <h5>180 <span class="text-light">CCs</span></h5>
+        </div>          
+        <div class="fixed-width"><img src="../../assets/images/bronze-badge.png" alt=""></div>
+        <img src="../../assets/images/profile-img.png" alt="" class="profile-img">
+        <div>
+          <h6>Bhavesh Joshi</h6>
+          <h6 class="points">80/500</h6>
+        </div>
+      </ion-item-divider>
+      
+      <ion-item-divider class="ion-no-padding">
+        <div slot="end">
+          <p>09 Apr 2020</p>
+          <h5>160 <span class="text-light">CCs</span></h5>
+        </div>          
+        <div class="fixed-width"><img src="../../assets/images/silver-badge.png" alt=""></div>
+        <img src="../../assets/images/profile-img.png" alt="" class="profile-img">
+        <div>
+          <h6>Bhavesh Joshi</h6>
+          <h6 class="points">80/500 <a href="">Improve your ranking</a></h6>
+        </div>
+      </ion-item-divider>
+           
+      <ion-item-divider class="ion-no-padding">
+        <div slot="end">
+          <p>09 Apr 2020</p>
+          <h5>100 <span class="text-light">CCs</span></h5>
+        </div>        
+        <div class="fixed-width"><ion-badge class="color-bar" color="primary"></ion-badge></div>
+        <img src="../../assets/images/profile-img.png" alt="" class="profile-img">
+        <div>
+          <h6>Bhavesh Joshi</h6>
+          <h6 class="points">80/500</h6>
+        </div>
+      </ion-item-divider> 
+
+      <ion-item-divider class="ion-no-padding">
+        <div slot="end">
+          <p>09 Apr 2020</p>
+          <h5>50 <span class="text-light">CCs</span></h5>
+        </div>        
+        <div class="fixed-width"><ion-badge class="color-bar" color="success"></ion-badge></div>
+        <img src="../../assets/images/profile-img.png" alt="" class="profile-img">
+        <div>
+          <h6>Bhavesh Joshi</h6>
+          <h6 class="points">80/500</h6>
+        </div>
+      </ion-item-divider> 
+
+    </ion-item-group>
+  </div>
+</ion-content>

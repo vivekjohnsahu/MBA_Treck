@@ -1,0 +1,54 @@
+.program-card{    
+    display: flex;
+    align-items: center;
+    color: black;
+    border: 2px solid rgb(34 90 149 / 0.2);
+    border-radius: 10px;
+    position: relative;
+    padding: 18px 12px;
+    overflow: hidden;
+    border-left: 0;
+    font-family: "AvenirLTStd-Roman";
+}
+.program-card>img{margin: 0 10px 0 5px; width:32px;}
+.program-card h5{margin: 0; font-weight: 600;}
+.program-card h6{font-weight: 400;}
+.program-card ion-item-divider{padding: 0; border: 0;}
+.program-card a.show-details{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 18px;
+    font-size: 18px;
+    color: #444444;
+}
+.program-detail-card{
+    border-color: rgb(30 173 79 / 0.3);
+    align-items: start;}
+.program-detail-card a.show-details{
+    bottom: 10px; top: auto;
+}
+
+.program-card:before{
+    position: absolute; 
+    content: ""; 
+    width: 4px; 
+    background: #225A95; 
+    height: 100%; 
+    top: 0;     
+    left: 0;
+}
+.program-detail-card:before{width: 5px; background: #1EAD4D;}
+
+ion-progress-bar{
+    --buffer-background: #EBEBEB;
+    height: 8px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.progress, .progress-indeterminate {
+    background-image: linear-gradient(45deg, #225a95, #3880ff);
+    border-radius: 10px;
+}

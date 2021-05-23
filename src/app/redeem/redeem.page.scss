@@ -1,0 +1,23 @@
+.redeem-top{
+    background-image: url('../../assets/images/redeem-top.png'); 
+    background-size: cover;
+    padding-top: 56px;
+}
+.redeem-top ion-item-divider{padding: 20px 0;}
+.redeem-top ion-item-divider p,
+.redeem-top ion-item-divider h1{color: white;    margin: 5px 0;}
+.redeem-top ion-item-divider h1{font-weight: bolder;}
+
+.coupons>h6{color: #000000cc;}
+.coupon-card{padding-left: 0;}
+.coupon-card h6{margin: 0; font-weight: 400; color: var(--ion-color-tertiary, #5260ff);}
+.coupon-card img{margin: 0;}
+
+.coupon-code.card{    padding: 20px;}
+.coupon-code.card a{    
+    border-radius: 30px;
+    margin: 0;
+    color: var(--ion-color-tertiary, #5260ff);
+    border: 1px solid var(--ion-color-tertiary, #5260ff);
+    padding: 8px;
+}

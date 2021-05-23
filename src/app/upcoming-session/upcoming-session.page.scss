@@ -1,0 +1,49 @@
+.timing-info{
+    background-image: url('../../assets/images/blue-rect-shape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 10px 0 25px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.timing-info h3, .timing-info p {color: white;    margin: 5px 0;}
+.timing-info p span{vertical-align: middle; margin-right: 5px;    display: inline-block;}
+.timing-info ul{display: flex;    justify-content: space-around;    padding: 0 16px;}
+.md .timing-info ul{padding: 0;}
+.timing-info ul li{position: relative;    width: 100%;    padding: 0 16px;}
+.timing-info ul li+li:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 2px;
+    height: 85%;
+    background: rgb(104 148 177);
+}
+.checkmark{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(to top, #1e6a9c, #0eafb7);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+}
+.checkmark.green{    background: #1EAD4D;}
+.checkmark ion-icon{color: white;    font-size: 28px;}
+
+.scroll-container{height: 150px;    overflow: hidden;    overflow-y: auto;}
+
+.btn-group{    
+    margin: 25px 0;
+}
+.btn-group button{    
+    font-size: 15px;
+}

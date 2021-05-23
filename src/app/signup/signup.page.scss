@@ -1,0 +1,94 @@
+ion-radio-group{
+    ion-row{
+        ion-item{
+            --border-color: #fff;
+        }
+    }
+}
+ion-radio-group{
+    ion-row{
+        ion-item::part(native){
+            min-height: auto;
+        }
+    }
+}
+ion-input, ion-select{
+    --placeholder-color: #000000;
+    --placeholder-opacity: 1;
+    font-size: 14px;    
+    --padding-start: 0;
+}
+
+ul.progressbar{padding: 0;    margin: 20px 10px;    text-align: center;}
+ul.progressbar li{
+    list-style-type: none;
+    width: calc(100%/3);
+    height: 18px;
+    position: relative;
+    display: inline-block;
+}
+ul.progressbar li:before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #eeeeee;
+    border-radius: 50%;
+}
+ul.progressbar li:after{    
+    position: absolute;
+    content: "";
+    right: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 2px;
+    width: calc(100% - 18px);
+    background: #eeeeee;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 11%)
+}
+ul.progressbar li.active:before{background-color: #1C729E;}
+ul.progressbar li.active:after{background-color: #1C729E;}
+ul.progressbar li:first-child{width: 18px;}
+ul.progressbar li:first-child:after{display: none;}
+
+.signup-form .form-group{font-size: 14px;}
+.signup-form .form-group ion-input, .profile-form .form-group ion-select{margin-top: 5px;}
+.signup-form .form-group ion-radio-group{margin-top: 15px; display: block;}
+.signup-form .form-group ion-radio-group ion-label{
+    margin-left: 10px;
+    vertical-align: super;
+    font-size: 14px !important;
+    color: black;
+}
+
+.skip{text-align: center; font-weight: bold; font-size: 15px; display: block;}
+.skip ion-icon{vertical-align: top;}
+.error_cls{
+    color: red;
+    font-size: 12px;
+}
+.form-group ion-item{
+    --padding-start: 0px;
+}
+.frgt_btn:disabled{
+    background-color: #1e6a9c42;
+    background-image: linear-gradient(to left, #1e6a9c54, #10ae9d57);
+}
+.frgt_btn{
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 3rem;
+    color: white;
+    background-color: #1E6A9C;
+    background-image: linear-gradient(to left, #1e6a9c, #10AE9D);
+    margin: 20px auto;
+    max-width: 320px;
+    display: block;
+    border: 1px solid #4396cd;
+    text-transform: uppercase;
+}
+

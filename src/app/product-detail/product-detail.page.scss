@@ -1,0 +1,144 @@
+.btn1{background-color:#72C9D2;   color: white; }
+.btn2{  background-color: #FAF4F5;    color: #b27d85;}
+.btn3{  background-color: #E0FFFE;    color: #729f9e;}
+.btn4{  background-color: #72C9D2;    color: white;}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #225A95;
+}
+
+.share,
+.price{color: #225a95; font-weight: 600;    margin-bottom: 0;}
+.price span{color: #225a95; display: inline-block;    font-size: 14px;    opacity: 0.7;    text-decoration: line-through;}
+
+ul.rating{padding: 0;    margin: 5px 0 0;}
+ul.rating li{color: #cacaca;    display: inline-block;    margin: 0 1px;    font-size: 14px;}
+ul.rating li.active-star{color: #f1c40f;}
+
+iframe{border-radius: 10px; box-shadow: 0 1px 5px #747474; -webkit-box-shadow: 0 1px 5px #747474;}
+
+.sample-link{text-decoration: underline; color: #225A95; font-size: 16px; font-weight: 600;}
+
+.btn-group button:nth-child(1){border-radius: 3rem 0 0 3rem;}
+.btn-group button:nth-child(2){border-radius: 0 3rem 3rem 0;}
+
+.engage-process{padding: 0; }
+.engage-process li{position: relative;  display: flex; align-items: center;}
+.engage-process li+li{ padding-top: 30px;}
+.engage-process li+li:before{
+    position: absolute;
+    content: "";
+    border-left: 1px dashed #225a95;
+    width: 1px;
+    height: 60%;
+    bottom: 30px;
+    left: 14px;}
+.engage-process li p{margin: 0;}
+.engage-process li span{margin-right: 10px;}
+
+.include-card{    border-radius: 15px;    color: white;    height: 100%;    padding: 10px; margin: 0 3px;}
+.include-card img{height: 35px; }
+.include-card p{margin: 5px 0 0;}
+.include-card.card1{background: #225a95;}
+.include-card.card2{background: #07adaa; }
+.include-card.card3{background: #107b9b;}
+
+#learn-obj .include-card img{height: auto;}
+
+.analysis-area{background-color: #EDEDED;}
+.analysis-area ul{display: flex;}
+.analysis-area ul li{margin-right: 10px;}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(0 0 0 / 0.5);
+    outline: 0;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal-dialog {
+    max-width: 340px;
+    margin: 1.75rem auto;
+    width: auto;
+    pointer-events: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+}
+.modal-content{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: white;
+}
+button.close{
+    outline: 0;
+    z-index: 999;
+    float: right;
+    background: white;
+    font-size: 20px;
+}
+
+/*reviews*/
+.cx-rating{display: flex; align-items: center;}
+.cx-rating p{margin: 0;}
+.cx-rating h1{
+    margin: 0;
+    margin-right: 10px;
+    font-size: 35px;
+    font-family: auto;
+    font-weight: 600;
+}
+.reviews-tabs{background-color: #F9FBFE;}
+.reviews-tabs .nav-pills {border-bottom: 1px solid #e3e3e3;     margin-bottom: 20px;}
+.reviews-tabs .nav-link{
+    color: #767676;
+    border-radius: 0;
+    margin: 0;
+    font-family: 'AvenirLTStd-Roman';
+    font-weight: 600;
+    padding: 0.8rem;
+    margin-right: 10px;
+}
+.reviews-tabs .nav-link.active{
+    color: #225a95;
+    background-color: transparent;
+    border-bottom: 2px solid;
+}
+
+.review-list{margin: 0 10px;}
+.review-list li{
+    display: flex;
+    align-items: start;
+}
+.review-list li img{
+    width: 45px;
+    margin-right: 10px;
+}
+.review-list li figcaption{
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+    width: 100%;
+}
+.review-list li:last-child figcaption{border: 0;    margin: 0;    padding: 0;}
+.review-list li figcaption h6{font-weight: 600;     margin-bottom: 5px;}
+.review-list li figcaption p{font-family: 'AvenirLTStd-Roman';    color: black;}
+.review-list li figcaption h6+p{margin: 0;    color: gray;}
+.review-list li figcaption .rating{position: absolute; top: 0; right: 0;}
+
+.review-list figcaption iframe{margin: 20px 0;}

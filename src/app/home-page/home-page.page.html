@@ -1,0 +1,63 @@
+<ion-content>
+  <img src="/assets/images/login-top-shape.png">
+  <div class="login-wrapper">
+    <h1>Welcome to MBAtrek!</h1>
+    <div class="login-form">
+      <form (ngSubmit)="login()" [formGroup]="loginForm">
+        <div class="form-group">
+          <ion-label position="stacked">Email Id</ion-label>            
+          <ion-input type="text" class="form-control input-group" id="" required [(ngModel)]="LoginData.email" formControlName="email" [class.error1]="!loginForm.controls.email.valid && loginForm.controls.email.dirty" clearInput>
+            <span><ion-icon name="person-outline"></ion-icon></span>
+          </ion-input>      
+        </div>
+        <div class="error_cls" *ngIf="(loginForm.get('email').hasError('minlength') || loginForm.get('email').hasError('pattern') ||loginForm.get('email').hasError('required') ) && loginForm.get('email').touched">
+          <div class="error" *ngIf="loginForm.get('email').hasError('required') && loginForm.get('email').touched">
+            Please enter valid Email
+          </div>
+          <div class="error" *ngIf="loginForm.get('email').hasError('pattern') && loginForm.get('email').touched">
+            Please enter valid Email
+          </div>
+        </div>
+        <div class="form-group">
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" class="form-control input-group" type="password" required [(ngModel)]="LoginData.password" formControlName="password" [class.error1]="!loginForm.controls.password.valid && loginForm.controls.password.dirty" clearInput>
+            <span><ion-icon name="lock-closed-outline"></ion-icon></span>
+          </ion-input>       
+        </div>
+        <div class="error_cls" *ngIf="( loginForm.get('password').hasError('minlength') || loginForm.get('password').hasError('maxlength') ||loginForm.get('password').hasError('required') ) && loginForm.get('password').touched">
+          <div class="error" *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">
+            Please enter valid Password
+          </div>
+          <div class="error" *ngIf="loginForm.get('password').hasError('minlength') && loginForm.get('password').touched">
+            Please enter valid Password
+          </div>
+        </div>
+        <div class="ion-text-end"><a class="text-dark" (click)="forgotPassword()">Forgot Password?</a></div>
+        <!-- <button type="submit" class="gradient-btn ion-activatable ripple-parent" [disabled]="loginForm.invalid">LOGIN
+          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+        </button>  -->
+        <div>
+          <button type="submit" class="frgt_btn" [disabled]="loginForm.invalid" >LOGIN</button> 
+         </div>
+        <div class="ion-text-center">
+          <p class="text-light">Or Sign Up Using</p>
+          <ion-grid>
+            <ion-row class="ion-justify-content-center social-signup-list">
+              <ion-col size="3">
+                <a><img src="/assets/images/google.png"></a>
+              </ion-col>
+              <ion-col size="3">
+                <a><img src="/assets/images/facebook.png"></a>
+              </ion-col>
+              <ion-col size="3">
+                <a><img src="/assets/images/linkedin.png"></a>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </form>
+    </div>
+    <p class="text-light ion-text-center">Don't have an account? <a (click)="SignUp()" class="text-blue">Sign Up</a></p>
+  </div>
+</ion-content>
+<ngx-ui-loader [fgsSize]='50'  ></ngx-ui-loader>

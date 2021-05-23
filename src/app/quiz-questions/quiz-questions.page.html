@@ -1,0 +1,206 @@
+<ion-header>
+  <ion-toolbar class="white">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Quiz</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="transform-top">
+  <div class="gradient-bg">    
+    <form>
+      <div class="ques-top">
+        <h2 class="time-left">01:14</h2>
+        <div>
+          <button href="" class="ghost-btn btn-nav"><ion-icon name="chevron-back-outline"></ion-icon> Previous</button>
+          <button href="" class="ghost-btn btn-nav ion-float-right" slot="end">Next <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
+      </div>
+      <div class="round-border-top questions">
+        <div class="question1" *ngIf="question1">
+          <h1>1.</h1>
+          <h5 class="ques">Ensure you respond honestly to the statements put, based on the first response that comes to your mind.</h5>
+          <div class="form-group mcq-stacked">
+            <ion-radio-group value="B">    
+              <ion-item>
+                <ion-radio color="tertiary" checked value="A"></ion-radio>
+                <ion-label>A. Lorem Ipsum</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" value="B"></ion-radio>
+                <ion-label>B. Lorem Ipsum</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" value="C"></ion-radio>
+                <ion-label>C. Lorem Ipsum</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" value="D"></ion-radio>
+                <ion-label>D. Lorem Ipsum</ion-label>
+              </ion-item>
+            </ion-radio-group>
+          </div>
+        </div>
+        <div class="question2" *ngIf="question2">
+          <h1>2.</h1>
+          <h5 class="ques">What makes you a suitable candidate for this business school?</h5>
+          <div class="form-group">
+            <ion-radio-group value="Advantages">    
+              <ion-item>
+                <ion-radio color="tertiary" checked value="Advantages"></ion-radio>
+                <ion-label>Advantages</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" value="Resources"></ion-radio>
+                <ion-label>Resources Wise</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" checked value="Advantages"></ion-radio>
+                <ion-label>Advantages</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" value="Resources"></ion-radio>
+                <ion-label>Resources Wise</ion-label>
+              </ion-item>
+            </ion-radio-group>    
+          </div>
+        </div>
+        <div class="question3" *ngIf="question3">
+          <h1>3.</h1>
+          <h5 class="ques">What makes you a suitable candidate for this business school?</h5>
+          <div class="form-group">
+            <ion-radio-group value="Advantages">    
+              <ion-item>
+                <ion-checkbox color="tertiary" checked value="Advantages"></ion-checkbox>
+                <ion-label>Advantages</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox color="tertiary" value="Resources"></ion-checkbox>
+                <ion-label>Resources Wise</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox color="tertiary" checked value="Advantages"></ion-checkbox>
+                <ion-label>Advantages</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox color="tertiary" value="Resources"></ion-checkbox>
+                <ion-label>Resources Wise</ion-label>
+              </ion-item>
+            </ion-radio-group>
+          </div>
+        </div>
+        <div class="question4" *ngIf="question4">
+          <div class="form-group">
+            <ion-label class="ques">4. What are your short and long-term goals?</ion-label>    
+            <ion-textarea rows="3" clearOnEdit="true" placeholder="Your short term goals should be concrete and achievable, while your long term goals should line with your passion and personality" class="form-control"></ion-textarea>
+          </div>
+          <div class="form-group">
+            <ion-label class="ques">5. What are your short and long-term goals?</ion-label>    
+            <ion-textarea rows="3" clearOnEdit="true" placeholder="Your short term goals should be concrete and achievable, while your long term goals should line with your passion and personality" class="form-control"></ion-textarea>
+          </div>
+          <div class="form-group">
+            <ion-label class="ques">6. What are your short and long-term goals?</ion-label>
+            <div class="inputFile">
+              <span>Choose File</span>
+              <ion-input type="file"></ion-input>
+            </div>    
+          </div>
+        </div>
+        <div class="question5" *ngIf="question5">
+          <h1>5.</h1>
+          <h5 class="ques">What are your short-term and long-term goals?</h5>
+          <div class="form-group pictorial">
+            <ion-radio-group value="C">    
+              <ion-item>
+                <ion-radio color="tertiary" value="A"></ion-radio>
+                <ion-label>
+                  <img src="../../assets/images/pictorial1.png" alt="">
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" value="B"></ion-radio>
+                <ion-label>
+                  <img src="../../assets/images/pictorial2.png" alt="">
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" checked value="C"></ion-radio>
+                <ion-label>
+                  <img src="../../assets/images/pictorial1.png" alt="">
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-radio color="tertiary" value="D"></ion-radio>
+                <ion-label>
+                  <img src="../../assets/images/pictorial2.png" alt="">
+                </ion-label>
+              </ion-item>
+            </ion-radio-group>
+          </div>
+        </div>
+        <div class="question6" *ngIf="question6">
+          <h1>6.</h1>
+          <h5 class="ques">Rate your work colleagues (Full Time employees) on the following parameters</h5>
+          <div class="matrix">
+            <div class="standards">
+              <ion-item>Poor</ion-item>
+              <ion-item>Below Average</ion-item>
+              <ion-item>Average</ion-item>
+              <ion-item>Good</ion-item>
+              <ion-item>Excellent</ion-item>
+            </div>
+            <div class="form-group">
+              <ion-label>Professionalism</ion-label>
+              <ion-radio-group value="">              
+                <ion-item>
+                  <ion-radio color="tertiary" value="poor"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="below-avg"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="avg"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="good"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="excellent"></ion-radio>
+                </ion-item> 
+              </ion-radio-group>  
+            </div>
+            <div class="form-group">
+              <ion-label>Friendliness</ion-label>
+              <ion-radio-group value="">              
+                <ion-item>
+                  <ion-radio color="tertiary" value="poor"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="below-avg"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="avg"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="good"></ion-radio>
+                </ion-item> 
+                <ion-item>
+                  <ion-radio color="tertiary" value="excellent"></ion-radio>
+                </ion-item> 
+              </ion-radio-group>  
+            </div>
+          </div>
+        </div>
+        <div class="question7">
+          <h1>7.</h1>
+          <h5 class="ques">Overall how would you rate our service?</h5>
+          <ion-range min="1000" max="2000" step="100" value="1400" snaps color="success">
+          </ion-range>
+          <button type="submit" class="gradient-btn ion-activatable ripple-parent" [routerLink]="['/quiz-feedback']">Next
+            <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</ion-content>

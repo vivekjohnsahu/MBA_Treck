@@ -1,0 +1,308 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/*Resuable Css codes for whole project*/
+:root{
+    --highlight-height: 2px;
+    --ion-color-primary: #0faeb2;
+    --ion-color-tertiary: #1f699b;
+    --ion-color-success: #1EAD4D;
+}
+:host{
+    font-family: "AvenirLTStd-Roman;" ;
+}
+
+
+/*fonts*/
+@font-face {
+    font-family: "AvenirLTStd-Roman";
+    src: url("assets/fonts/AvenirLTStd-Roman.eot") format("embedded-opentype"), 
+         url("assets/fonts/AvenirLTStd-Roman.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AvenirLTStd-Book";
+    src: url("assets/fonts/AvenirLTStd-Book.ttf");
+}
+// @font-face {
+//     font-family: "AvenirLTProBlack";
+//     src: url("assets/fonts/AvenirLTProBlack.otf");
+// }
+
+a{text-decoration : none;font-size:14px;}
+p{font-size:14px;}
+
+body{
+    font-family: "AvenirLTStd-Book" ;
+}
+
+/*TEXT*/
+.text-dark{color: #2c2c2c;}
+.text-light{color: #909090;}
+.text-blue{color: #1f699b !important;}
+.text-primary{color: #0faeb2;}
+
+.bg-tertiary{background-color: var(--ion-color-tertiary) !important; color: white;}
+.bg-primary{background-color: var(--ion-color-primary) !important; color: white;}
+.bg-success{background-color: var(--ion-color-success) !important; color: white;}
+
+
+h1,h2,h3,h4,h5,h6{color: black; margin-top: 0;font-family: "AvenirLTStd-Roman";}
+ul{padding-left: 0; list-style-type: none;}
+
+.header-ios ion-toolbar:last-of-type{--border-width: 0;}
+.header-md::after{display: none;}
+ion-title{
+    color: black;
+    font-family: AvenirLTProBlack;
+    font-size: 18px;
+    padding: 0;
+}
+
+ion-back-button {color: black;}
+
+ion-item-divider{background: transparent; padding: 0; border: 0;}
+
+
+/*FORM*/
+ion-input, ion-select{
+    --placeholder-color: #2c2c2c;
+    --placeholder-opacity: 1;
+    font-size: 15px;    
+    --padding-start: 0;
+}
+
+ion-checkbox{
+    --border-radius: 3px;
+    margin-right: 10px;
+    --size: 20px;
+    --checkmark-width: 3px;
+}
+
+.form-group{   margin: 15px 0;}
+.form-group ion-label{color: #333333cc;}
+.form-control{    width: 100%;    border-bottom: 1px solid #cccccc;}
+ion-textarea.form-control{border: 1px solid #cccccc; border-radius: 5px; margin-top: 10px;}
+.input-group span{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group span img{width: 18px;}
+.input-group.form-control {
+    position: relative;
+    --padding-start: 35px;
+}
+
+ion-select{
+    background: url('assets/images/down-arrow.svg') no-repeat;    
+    background-size: 18px;    
+    background-position: 100% center;
+    --padding-start: 0;
+}
+ion-select::part(icon){    opacity: 0;}
+
+ion-radio-group{    
+    ion-item{
+        --border-color: #fff;
+    }    
+    ion-radio.in-item[slot="start"] {
+        margin: 11px 15px 10px 4px;
+    }
+}
+/*FORMS CSS ENDS*/
+
+ion-toolbar.white {
+    --background: transparent;
+}
+ion-toolbar.white ion-back-button,
+ion-toolbar.white ion-title{color: white;}
+
+.transform-top{transform: translateY(-56px);}
+
+/*BUTTONS*/
+button, button:focus{    outline: 0;}
+
+.ripple-parent {    position: relative;    overflow: hidden;}
+
+.gradient-btn{
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 3rem;
+    color: white;
+    background-color: #1E6A9C;
+    background-image: linear-gradient(to left, #1e6a9c, #10AE9D);
+    margin: 20px auto;
+    max-width: 320px;
+    display: block;
+    border: 1px solid #4396cd;
+    text-transform: uppercase;
+}
+.ghost-btn{
+    border: 1px solid #1E6A9C;
+    color: #1E6A9C;
+    background: white;
+}
+.btn-group{    
+    margin: 15px 0 0;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.primary,
+button.secondary,
+.btn-group button{
+    background: #215693;
+    border-color: #215693;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 100%;
+    min-height: 38px;
+}
+.btn-group{margin: 0;}
+.btn-group button img{margin-right: 5px;}
+button.primary,
+.btn-group button:last-child{margin-left: 2px; background: #049faf;     border-color: #049faf;}
+
+button.primary, button.secondary{border-radius: 30px; width: auto;     padding: 8px 15px;   font-size: 15px;}
+
+/*CUSTOM CLASSES*/
+.gradient-bg{
+    background-color: #1E6A9C;
+    background-image: linear-gradient(to right, #206199, #0faeb2);
+    background-image: -webkit-linear-gradient(to right, #206199, #0faeb2);
+    color: white;
+}
+
+.round-border-top{    border-radius: 40px 40px 0 0;    background: white;}
+
+.card{box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px;      padding: 12px; 
+    margin: 15px 0;    word-break: break-word;}
+
+.pointer-list li{margin: 7px 0; padding-left: 18px;    position: relative;}
+.pointer-list li p{margin: 0;   color: #717171;}
+.pointer-list li:before{
+    position: absolute;
+    content: "";    
+    background-image: url('assets/images/blue-arrow.png');
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 10px;
+}
+.filter-popup{
+    .popover-wrapper{
+        .popover-content{
+            width: 90%;
+            top: 238px !important;
+            height: calc(100vh - 270px);  
+            
+            &.sc-ion-popover-ios{
+                top: 228px !important;
+                left: 50% !important;
+                transform: translateX(-50%);
+                --box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+            }
+
+            &::before{
+                position: absolute;
+                top: -30px;
+                right: 30px;
+                width: 0;
+                height: 0;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 35px solid #555;
+            }
+        }        
+    }    
+}
+
+
+/*TABS AND PILLS*/
+.fade:not(.show) {
+    opacity: 0;
+}
+.fade {
+    transition: opacity .15s linear;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+.nav-link {
+    display: block;
+    padding: .6rem 1rem;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+}
+.nav-pills .nav-link {
+    border-radius: 5rem;
+    margin-left: 15px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.tab-content {
+    > .tab-pane {
+      display: none;
+    }
+    > .active {
+      display: block;
+    }
+}

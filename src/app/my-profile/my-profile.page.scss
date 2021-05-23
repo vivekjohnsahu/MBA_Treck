@@ -1,0 +1,21 @@
+ion-radio-group{
+    ion-row{
+        ion-item{
+            --border-color: #fff;
+        }
+    }
+}
+ion-input, ion-select{
+    --placeholder-color: #2c2c2c;
+    --placeholder-opacity: 1;
+    font-size: 14px;    
+    --padding-start: 0;
+}
+.profile-img{display: flex;    align-items: center; }
+.profile-img ion-avatar{width: 90px; height: 90px; margin-right: 20px;}
+.profile-img h4{color: white;   font-weight: bold;}
+.profile-img p{    color: rgb(255 255 255 / 0.7);    margin: 0;    font-weight: 500;}
+.profile-info{margin: 0;}
+.profile-info li{margin-bottom: 20px;}
+.profile-info li p{color: gray;    margin: 0 0 3px;}
+.profile-info li h6{    font-weight: 600;    color: rgb(0 0 0 / 0.8);}

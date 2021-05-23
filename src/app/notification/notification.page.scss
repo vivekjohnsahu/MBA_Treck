@@ -1,0 +1,26 @@
+.notification-card{
+    display: flex;
+    border-left: 5px solid #1C7998;
+    align-items: center;
+    color: black;
+    position: relative;
+}
+.notification-card figure{margin: 0 12px 0 0;    max-width: 55px;}
+.notification-card h6{margin: 0 0 3px;}
+.notification-card h6.text-blue{font-size: 15px;}
+.notification-card p{margin: 0 0 8px;}
+.notification-card .top-icon{
+    position: absolute;
+    font-size: 20px;
+    right: 12px;
+    top: 12px;
+    display: block;
+    color: black;
+}
+
+.notification-card>ion-icon[color="warning"]{
+    align-self: start;
+    margin-right: 10px;
+    font-size: 25px;
+    height: 20px;
+}

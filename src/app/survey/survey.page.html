@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Satisfaction Survey</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item-divider>
+    <button href="" class="ghost-btn btn-nav"><ion-icon name="chevron-back-outline"></ion-icon> Previous</button>
+    <button href="" class="ghost-btn btn-nav" slot="end">Next <ion-icon name="chevron-forward-outline"></ion-icon></button>
+  </ion-item-divider>
+  <h3>Question 1</h3>
+  <h5 class="question">When you need help or has concerns related with our products, how satisfied are you with our customer support’s performance?</h5>
+  <div class="survey-choice ion-text-center">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <a href="" [routerLink]="['/survey-feedback']">
+            <img src="../../assets/images/unhappy.png" alt="">
+            <h6>Unhappy</h6>
+          </a>
+        </ion-col>
+        <ion-col size="4">
+          <a href="" [routerLink]="['/survey-feedback']">
+            <img src="../../assets/images/neutral.png" alt="">
+            <h6>Neutral</h6>
+          </a>
+        </ion-col>
+        <ion-col size="4">
+          <a href="" [routerLink]="['/survey-feedback']">
+            <img src="../../assets/images/satisfied.png" alt="">
+            <h6>Satisfied</h6>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <button type="submit" class="gradient-btn ion-activatable ripple-parent">FINISH
+    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+  </button> 
+</ion-content>

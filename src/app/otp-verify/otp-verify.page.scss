@@ -1,0 +1,132 @@
+main{
+    background-image: url('../../assets/images/login-top-shape.png');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.log_s{
+    display: flex;
+    align-items: center;
+}
+.log_s div{
+    width: 20%;
+    margin: 0 auto;
+}
+.frm_det{
+    padding: 0px 30px;
+}
+.frm_det p{
+    margin-top: 30px;
+    margin-top: 30px;
+}
+
+.sub_bttn a{
+    display: block;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    padding: 10px;
+    box-shadow: 1px 1px 16px 0px #ccc;
+}
+.sub_bttn{
+    padding: 20px 0;
+}
+.otp-image{
+    width: 100%;
+    height: calc(100vh - 332px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 125px;
+    }
+}
+.text-light{
+    text-align: center;
+}
+.text-light1{
+    text-align: inherit;
+}
+
+.otp-text{
+    margin-bottom: 10px;
+    p, h6{
+        margin:0;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+
+.otp-boxes form{width: 100%;  }
+.otp-boxes form .form-group{
+    display: flex;
+    justify-content: center;
+}
+.otp-boxes form .form-group > input{
+    width: 40px;
+    margin: 12px;
+}
+.otp-boxes form .box{display: flex;
+    height: 40px;
+    max-width: 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #ECEAEA; 
+    text-align: center;
+    --padding-end: 0;
+    outline: none;
+    border: none;
+}
+.otp-boxes form button{margin-top: 20px;}
+.gradient-btn {
+    margin: 15px auto;
+    padding: 10px;
+}
+
+
+#partitioned {
+    letter-spacing: 40px;
+    border: 0;
+    background-image: linear-gradient(to left, #22bddf 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 35px;
+    width: 220px;
+    min-width:220px;
+    font-size: 18px;
+    padding-left: 11px !important;
+}
+
+#divInner{
+    left: 0;
+    position: sticky;
+} 
+#divOuter{
+    width: 184px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.form_container > ion-label{
+    padding-left: 13%;
+}
+// .form_container{
+//     margin-bottom: 0rem!important
+// }
+.form_container ion-input{
+    width: 87%;
+    margin: 0 0 0 auto;
+    border-bottom: 1px solid #ccc;
+    font-size:12px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+
+
+
+
+

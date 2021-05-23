@@ -1,0 +1,74 @@
+ion-radio-group{
+    ion-row{
+        ion-item{
+            --border-color: #fff;
+        }
+    }
+}
+.profile-top{
+    background-color: #1E6A9C;
+    background-image: linear-gradient(to right, #206199, #0faeb2);
+    background-image: -webkit-linear-gradient(to right, #206199, #0faeb2);
+    color: white;
+}
+
+.profile-top ion-toolbar {
+    --background: transparent;
+}
+
+.profile-img{display: flex;    align-items: center;    margin: 10px 0 10px;}
+.profile-img ion-avatar{width: 90px; height: 90px; margin-right: 20px;}
+.profile-img h4{margin: 0 0 8px;}
+.profile-img p{    color: rgb(255 255 255 / 0.7);    margin: 0;    font-weight: 500;}
+
+ion-input, ion-select{
+    --placeholder-color: #2c2c2c;
+    --placeholder-opacity: 1;
+    font-size: 14px;    
+    --padding-start: 0;
+}
+
+ul.progressbar{padding: 0;    margin: 10px;    text-align: center;}
+ul.progressbar li{
+    list-style-type: none;
+    width: calc(100%/3);
+    height: 18px;
+    position: relative;
+    display: inline-block;
+}
+ul.progressbar li:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #eeeeee;
+    border-radius: 50%;
+}
+ul.progressbar li:after{    
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 2px;
+    width: calc(100% - 18px);
+    background: #eeeeee;
+    box-shadow: 0px -1px 5px 1px rgb(0 0 0 / 15%);
+}
+ul.progressbar li.active:before{background-color: #1C729E;}
+ul.progressbar li.active:after{background-color: #1C729E;}
+ul.progressbar li:last-child{width: 18px;}
+ul.progressbar li:last-child:after{display: none;}
+.profile-form .form-group{font-size: 14px;}
+.profile-form .form-group ion-input, .profile-form .form-group ion-select{margin-top: 5px;}
+.profile-form .form-group ion-radio-group{margin-top: 15px; display: block;}
+.profile-form .form-group ion-radio-group ion-label{
+    margin-left: 10px;
+    vertical-align: super;
+    font-size: 14px !important;
+    color: black;
+}
+

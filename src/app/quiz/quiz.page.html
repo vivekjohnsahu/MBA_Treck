@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="white">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Quiz</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="transform-top">
+  <div class="gradient-bg">
+    <div class="ion-padding-horizontal quiz-title">
+      <img src="../../assets/images/quiz-icon.png" alt="">
+      <h2>Play Super Quiz</h2>
+    </div>
+    <div class="round-border-top quiz-info">
+      <h5>Today's Quiz on</h5>
+      <h2 class="text-blue">General Knowledge</h2>
+      <h5 class="timer-title">This Quiz ends in</h5>
+      <ul class="timer">
+        <li>
+          <span id="hrs">7</span>
+          Hours
+        </li>
+        <li>
+          <span id="min">35</span>
+          Minutes
+        </li>
+        <li>
+          <span id="sec">12</span>
+          Seconds
+        </li>
+      </ul>
+      <button type="submit" class="gradient-btn ion-activatable ripple-parent" [routerLink]="['/quiz-instructions']">Play Quiz Now
+        <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+      </button> 
+    </div>
+  </div>
+</ion-content>

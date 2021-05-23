@@ -1,0 +1,68 @@
+.cart-card{    
+    display: flex;    
+    align-items: center;    
+    color: black;
+    position: relative;    
+}
+
+.cart-card img{margin: 0 15px 0 5px; width:50px;}
+.cart-card h6{margin: 0;}
+.cart-card .price{
+    color: #0faeb2;
+    margin: 0;
+    font-family: AvenirLTProBlack;
+    font-size: 16px;
+}
+.cart-card a{position: absolute;     right: 15px;     bottom: 15px;text-decoration: underline;}
+
+.cart-block-text{
+    h6{
+        font-size:14px;
+    }
+    p{
+        margin:10px 0;
+    }
+}
+p.italic{
+    font-style:italic;
+}
+.quantity{
+    float: right;
+    
+}
+.quantity form{display: flex;}
+.quantity button,
+.quantity ion-input{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #ebebeb;
+    color: #0faeb2;
+    font-weight: 400;}
+.quantity button:first-child{border-radius: 4px 0 0 4px;}
+.quantity button:last-child{border-radius: 0 4px 4px 0;}
+.quantity form ion-input{
+    margin: 0 1px;
+    font-size: 13px;
+    --padding-start: 0;
+
+}
+.quantity form ion-input input{padding: 0;}
+
+.subtotal{margin-top: 40px; position: relative;}
+.subtotal .toggle-btn{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: 9;
+    top: -12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px;
+}
+.subtotal ion-item-divider{padding: 0 10px;}
+.subtotal ion-item-divider p{font-weight: 500;}
+.subtotal button{margin-bottom: 0;}

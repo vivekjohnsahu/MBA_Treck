@@ -1,0 +1,19 @@
+.contact-top{
+    background-image: url('../../assets/images/contact-top.png'); 
+    background-size: cover;
+    min-height: 150px;
+    padding-top: 56px;
+}
+.contact-wrapper{
+    margin-top: -60px;
+    padding-top: 40px;
+}
+
+.contact-wrapper .guest form{box-shadow: 0 5px 5px #e9e9e9 ;}
+.contact-wrapper form .form-group{margin: 0 0 25px;}
+.contact-info a,
+.user .form-group p a{font-size: 15px;    color: var(--ion-color-tertiary);    }
+
+.user .form-group>ion-label{color: rgb(0 0 0 / 80%); font-weight: 500; font-size: 14px;}
+ion-chip{    background: #2C75A2;    margin: 7px 7px 7px 0;}
+ion-chip ion-label{color: white;}

@@ -1,0 +1,134 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/*Resuable Css codes for whole project*/
+:root{
+    --highlight-height: 2px;
+    --ion-color-primary: #0faeb2;
+}
+:host{
+    font-family: "AvenirLTStd-Roman" ;
+}
+
+/*fonts*/
+@font-face {
+    font-family: "AvenirLTStd-Roman";
+    src: url("assets/fonts/AvenirLTStd-Roman.eot") format("embedded-opentype"), 
+         url("assets/fonts/AvenirLTStd-Roman.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AvenirLTProBlack";
+    src: url("assets/fonts/AvenirLTProBlack.otf");
+}
+
+a{text-decoration : none;font-size:14px;}
+p{font-size:14px;}
+
+body{
+    font-family: "AvenirLTStd-Roman" ;
+}
+
+/*TEXT*/
+.text-dark{color: #2c2c2c;}
+.text-light{color: #909090;}
+.text-blue{color: #1f699b;}
+.text-primary{color: #0faeb2;}
+
+.header-ios ion-toolbar:last-of-type{--border-width: 0;}
+
+.header-md::after{display: none;}
+ion-title{
+    color: black;
+    font-family: AvenirLTProBlack;
+    font-size: 18px;
+    padding: 0;
+}
+
+
+/*FORM*/
+ion-input, ion-select{
+    --placeholder-color: #2c2c2c;
+    --placeholder-opacity: 1;
+    font-size: 15px;    
+    --padding-start: 0;
+}
+
+.form-group{   margin: 15px 0;}
+.form-group ion-label{color: #333333cc;}
+.form-control{    width: 100%;    border-bottom: 1px solid #cccccc;}
+.input-group span{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group span img{width: 18px;}
+.input-group.form-control {
+    position: relative;
+    --padding-start: 35px;
+}
+
+ion-select{
+    background: url('assets/images/down-arrow.svg') no-repeat;    
+    background-size: 18px;    
+    background-position: 100% center;
+}
+ion-select::part(icon){
+    opacity: 0;
+}
+
+/*BUTTONS*/
+button, button:focus{
+    outline: 0;
+}
+
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-btn{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 14px;
+    border-radius: 3rem;
+    color: white;
+    background-color: #1E6A9C;
+    background-image: linear-gradient(-28deg, #1e6a9c, #10ae9d 70%);
+    margin: 20px auto;
+    max-width: 320px;
+    display: block;
+}
+
+
+.card{box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px;      padding: 12px; 
+    margin: 15px 0;    word-break: break-word;}

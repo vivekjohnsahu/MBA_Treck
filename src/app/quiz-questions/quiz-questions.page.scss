@@ -1,0 +1,172 @@
+.ques-top{padding: 60px 20px 20px; }
+.time-left{color: white;    text-align: center;    font-weight: bolder;}
+
+.questions{padding: 30px 20px;}
+.btn-nav{ 
+    border-radius: 15px;
+    padding: 5px 10px;
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+.btn-nav ion-icon{vertical-align: middle;}
+.ques{ 
+    margin: 15px 0 0;
+    line-height: 1.4;
+    font-weight: 600;
+    color: black;
+    font-family: "AvenirLTStd-Roman";
+    font-size: 18px;
+}
+
+
+ion-item::part(native){
+    padding-inline-start: 0;
+    min-height: auto;
+}
+ion-radio::part(container),
+ion-checkbox::part(container){
+    border-color: #1f699b;
+}
+ion-radio + ion-label,
+ion-checkbox + ion-label{
+    margin-left: 15px;
+    font-family: "AvenirLTStd-Roman";
+    color: gray;
+    font-weight: 600;
+}
+ion-checkbox{margin: 0 10px 0 0;}
+
+ion-textarea{border-radius: 0;    border: 0;    border-bottom: 2px solid #E5E9EC;   color: black;
+    font-family: "AvenirLTStd-Roman";}
+ion-textarea{
+    --placeholder-color: #2c2c2c;
+    --placeholder-opacity: 1;
+    font-size: 15px;    
+    --padding-start: 0;
+    --padding-top: 0;
+    --padding-end: 0;
+    margin-bottom: 25px;
+}
+
+/*File input*/
+.inputFile{
+    position: relative;
+    font-family: "AvenirLTStd-Roman";
+    font-weight: 600;
+    margin-top: 20px;
+    color: rgb(0 0 0 / 0.8);
+    font-size: 15px;
+}
+.inputFile ion-input{ opacity: 0;    display: inline-block;    width: 125px;}
+.inputFile span{
+    position: absolute;
+    top: 0;
+    background: #e4e4e4;
+    width: 125px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+}
+.inputFile label{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 57%;
+}
+
+
+.mcq-stacked ion-radio-group ion-item{    margin: 15px 0;}
+.mcq-stacked ion-radio-group ion-item ion-label{
+    position: absolute;
+    margin: 0;
+    padding-left: 20px;
+}
+.mcq-stacked ion-radio-group ion-item ion-radio{
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #c9c9c9;
+    padding: 22px 0;
+    margin: 0;
+    overflow: hidden;
+}
+.mcq-stacked ion-radio-group ion-item ion-radio.radio-checked{
+    .radio-icon{
+        .radio-inner{
+            width: 100%;
+            height: 45px;
+            border-radius: 0px;
+        }
+    } 
+}
+.mcq-stacked ion-radio-group ion-item ion-radio.radio-checked{border-color: #225A95;    background: #225A95;}
+.mcq-stacked ion-radio-group ion-item ion-radio.radio-checked+ion-label{color: white; z-index: 9;}
+
+.mcq-stacked ion-radio-group ion-item ion-radio::part(container),
+.pictorial ion-radio-group ion-item ion-radio::part(container){border: 0;   opacity: 0;     --inner-padding-end: 0;}
+
+.pictorial ion-radio-group{display: flex; justify-content: space-between;   flex-wrap: wrap;}
+.pictorial ion-item{width: 48%;  overflow: visible; margin-bottom: 15px;}
+.pictorial ion-radio-group ion-item ion-radio{    width: 100%;    margin: 0;    min-height: 80px;}
+.pictorial ion-item ion-label{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+.pictorial ion-item ion-label img{height: 100%;     width: 100%;}
+.pictorial ion-radio-group ion-item ion-radio.radio-checked+ion-label{border-color: #2E3192;
+    overflow: visible;}
+.pictorial ion-radio-group ion-item ion-radio.radio-checked+ion-label:before{
+    position: absolute;
+    content: "";
+    background: #2E3192;
+    top: -6px;
+    right: -6px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.pictorial ion-radio-group ion-item ion-radio.radio-checked+ion-label:after{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 9px;
+    right: 1px;
+    top: -3px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/*MATRIX*/
+.matrix {display: flex;}
+.matrix .standards{    width: 40%;    padding-top: 40px;}
+
+.matrix .form-group ion-label,
+.matrix .standards ion-item{
+    --border-color: #fff;
+    min-height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f699b;
+    font-family: "AvenirLTStd-Roman";
+    margin: 3px 0 0;
+} 
+
+.matrix .form-group{margin: 15px 5px;}
+.matrix .form-group ion-label{color: rgb(0 0 0 / 0.8);}
+
+.matrix ion-item ion-radio{width: 100%;}
+.matrix ion-item ion-radio::part(container) {
+    border-color: #a9a9a9;
+    width: 20px;
+    margin: auto;
+}
+.matrix ion-item ion-radio.radio-checked::part(container){border-color: #225A95;}

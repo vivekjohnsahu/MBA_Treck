@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar class="white gradient-bg">
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>My Profile</ion-title>
+        <a slot="end" class="ion-padding-horizontal">
+        	<img src="/assets/images/edit-profile.png" (click)="edit()" style="width:16px;">
+        </a>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="gradient-bg ion-padding">
+        <div class="profile-img">
+            <ion-avatar>
+                <img src="/assets/images/profile-img.png">
+            </ion-avatar>
+            <div>
+                <h4>Vivek sahu</h4>
+                <p>vivek@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="ion-padding">
+        <div class="employee">
+            <ul class="profile-info">
+                <li>
+                    <p>Address</p>
+                    <h6 slot="end">Sector 65 Noida</h6>
+                </li>
+                <li>
+                    <p>State</p>
+                    <h6 slot="end">Delhi</h6>
+                </li>
+                <li>
+                    <p>City</p>
+                    <h6 slot="end">Delhi</h6>
+                </li>
+                <li>
+                    <p>Mobile Number</p>
+                    <h6 slot="end">9876543210</h6>
+                </li>
+                <li>
+                    <p>Company Name</p>
+                    <h6 slot="end">Tekshapers Software Solutions Pvt. Ltd.</h6>
+                </li>
+                <li>
+                    <p>Designation</p>
+                    <h6 slot="end">Web Developer</h6>
+                </li>
+                <li>
+                    <p>Current Years in Job</p>
+                    <h6 slot="end">4</h6>
+                </li>
+                <li>
+                    <p>Total Work Exp. in Years</p>
+                    <h6 slot="end">7</h6>
+                </li>
+                <li>
+                    <p>Function</p>
+                    <h6 slot="end">7</h6>
+                </li>
+                <li>
+                    <p>Industry</p>
+                    <h6 slot="end">Software</h6>
+                </li>
+            </ul>
+        </div>
+    </div>
+</ion-content>

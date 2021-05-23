@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar translucent>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">     
+      <span class="quiz-title">
+        <img src="../../assets/images/quiz-instr-title.png" alt="">
+        Quiz Instruction
+      </span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="transform-top">
+  <div class="instructions ion-padding">
+    <h6>This numerical reasoning test comprises of 20 questions and you will have 20 minutes to correctly answer as many as you can, you will not have the ability to pause the test.</h6>
+    <button type="submit" class="gradient-btn ion-activatable ripple-parent" [routerLink]="['/quiz-questions']">Continue to attempt
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </button> 
+  </div>
+</ion-content>

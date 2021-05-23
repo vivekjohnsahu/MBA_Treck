@@ -1,0 +1,14 @@
+@import "../redeem/redeem.page";
+
+.redeem-top ion-item-divider{padding: 20px 0 70px;}
+
+.earn-points ion-card{margin-top: -60px;    margin-bottom: 25px;    padding-top: 5px;}
+.earn-points ion-card h5{color: var(--ion-color-tertiary, #5260ff); margin: 0;}
+
+.earn-points ion-item-divider{
+    border: 2px solid #BFBFBF;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}

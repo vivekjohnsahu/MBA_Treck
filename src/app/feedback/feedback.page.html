@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar class="white">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="transform-top">
+  <div class="contact-top"></div>
+  <div class="contact-wrapper round-border-top">
+    <div class="user ion-padding-horizontal">
+      <form>
+        <h5>Rate us on the following parameters</h5>
+        <div class="form-group">
+          <ion-item class="ion-no-padding">
+            <ion-label>Quality of Guidance</ion-label>
+            <ion-input slot="end"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-group">
+          <ion-item class="ion-no-padding">
+            <ion-label>Materials Provided</ion-label>
+            <ion-input slot="end"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-group">
+          <ion-item class="ion-no-padding">
+            <ion-label>Impact on Career</ion-label>
+            <ion-input slot="end"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="form-group">
+          <ion-label position="stacked">Share your experience</ion-label>            
+          <ion-textarea rows="4" class="form-control"></ion-textarea>     
+        </div>
+
+        <div class="form-group">
+          <ion-label position="stacked">Would you recommend us to your<br> friend / family / colleagues</ion-label> 
+
+          <ion-radio-group value="">
+            <ion-item class="no-padding">
+              <ion-radio value="Yes"></ion-radio>
+              <ion-label>
+                <img src="../../assets/images/feedback-like.png" alt="">
+              </ion-label>
+            </ion-item>
+
+            <ion-item no-padding>
+              <ion-radio value="No"></ion-radio>
+              <ion-label>
+                <img src="../../assets/images/feedback-dislike.png" alt="">
+              </ion-label>
+            </ion-item>
+          </ion-radio-group>   
+        </div>
+
+        <button type="submit" class="gradient-btn ion-activatable ripple-parent">SUBMIT
+          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+        </button> 
+      </form>
+    </div>
+  </div>
+
+  
+</ion-content>

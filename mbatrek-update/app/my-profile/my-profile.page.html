@@ -1,0 +1,194 @@
+<ion-content>
+  <div class="profile-top ion-padding">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <!-- <ion-back-button text="" icon="chevron-back-outline"></ion-back-button> -->
+        <img src="/assets/images/back-arrow-w.png">
+      </ion-buttons>
+      <a href="" slot="end">
+        <img src="/assets/images/edit-profile.png" style="width:16px;">
+      </a>
+    </ion-toolbar>
+    
+    <div class="profile-img">      
+      <ion-avatar>
+        <img src="/assets/images/profile-img.png">
+      </ion-avatar>
+      <div>
+        <h4>Deepak Singh</h4>
+        <p>deepak@gmail.com</p>
+      </div>
+    </div>    
+  </div>
+
+  <div class="profile-form ion-padding">
+    <form>
+      <!-- <div class="progressBox">
+        <ion-progress-bar value="0" id="profile-progress"></ion-progress-bar>
+      </div> -->
+      <ul class="progressbar" id="profile-progress">
+        <li class="active"></li>
+        <li class="active"></li>
+        <li class="active"></li>
+      </ul>
+
+      <div class="step-1">
+        <div class="form-group">
+          <ion-label position="stacked">Register As</ion-label>            
+          
+          <ion-radio-group value="employee">    
+            <ion-row>
+              <ion-item class="ion-no-padding" no-lines>
+                <ion-radio value="student"></ion-radio>
+                <ion-label>Student</ion-label>
+              </ion-item>
+          
+              <ion-item class="ion-no-padding">
+                <ion-radio value="employee"></ion-radio>
+                <ion-label>Employee</ion-label>
+              </ion-item>
+            </ion-row>   
+          </ion-radio-group>
+
+        </div>
+        
+        <div class="form-group">
+          <ion-label position="stacked">Address</ion-label>            
+          <ion-input type="text" class="form-control" id="" placeholder="Sector 65 Noida"></ion-input>      
+        </div>
+
+        <div class="form-group">
+          <ion-label position="stacked">Select State</ion-label>
+          <ion-select class="form-control" placeholder="Delhi" interface="action-sheet">
+            <ion-select-option value="Delhi" selected>Delhi</ion-select-option>
+            <ion-select-option value="Noida">Noida</ion-select-option>
+          </ion-select>
+        </div>
+
+        <div class="form-group">
+          <ion-label position="stacked">Select City</ion-label>
+          <ion-select class="form-control" placeholder="Delhi">
+            <ion-select-option value="Delhi" selected>Delhi</ion-select-option>
+            <ion-select-option value="Noida">Noida</ion-select-option>
+          </ion-select>
+        </div>
+        
+        <div class="form-group">
+          <ion-label position="stacked">Mobile Number</ion-label>            
+          <ion-input type="text" class="form-control" id="" placeholder="9876543210"></ion-input>      
+        </div>
+      </div>
+
+      <div class="step-2" *ngIf="step2">
+        <div class="employee">        
+          <div class="form-group">
+            <ion-label position="stacked">Company Name</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="Tekshapers Software Solutions Pvt. Ltd."></ion-input>      
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Designation</ion-label>
+            <ion-select class="form-control" placeholder="Web Developer">
+              <ion-select-option value="web developer" selected>Web Developer</ion-select-option>
+            </ion-select>
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Current Years in Job</ion-label>
+            <ion-select class="form-control" placeholder="4">
+              <ion-select-option value="4">4</ion-select-option>
+            </ion-select>
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Total Work Exp. in Years</ion-label>
+            <ion-select class="form-control" placeholder="7">
+              <ion-select-option value="7">7</ion-select-option>
+            </ion-select>
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Function</ion-label>
+            <ion-select class="form-control" placeholder="7">
+              <ion-select-option value="7">7</ion-select-option>
+            </ion-select>
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Industry</ion-label>
+            <ion-select class="form-control" placeholder="Software">
+              <ion-select-option value="software" selected>Software</ion-select-option>
+            </ion-select>
+          </div>
+        </div>
+
+        <div class="student">        
+          <div class="form-group">
+            <ion-label position="stacked">Institute Name</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="Institute Of Engineering Technology"></ion-input>      
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Course / Degree</ion-label>
+            <ion-select class="form-control" placeholder="MBA">
+              <ion-select-option value="MBA" selected>MBA</ion-select-option>
+            </ion-select>
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Current Year</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="2020"></ion-input>      
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Stream Specialization</ion-label>
+            <ion-select class="form-control" placeholder="MBA from LBS & PGPM">
+              <ion-select-option value="MBA">MBA from LBS & PGPM</ion-select-option>
+            </ion-select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="step-3" *ngIf="step3">
+        <div class="employee">        
+          <div class="form-group">
+            <ion-label position="stacked">Badges Earned</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="Tekshapers Software Solutions Pvt. Ltd."></ion-input>      
+          </div>
+                  
+          <div class="form-group">
+            <ion-label position="stacked">Career Creds</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="Tekshapers Software Solutions Pvt. Ltd."></ion-input>      
+          </div>
+                  
+          <div class="form-group">
+            <ion-label position="stacked">Reward and Credit Points</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="Tekshapers Software Solutions Pvt. Ltd."></ion-input>      
+          </div>
+        </div>
+
+        <div class="student">        
+          <div class="form-group">
+            <ion-label position="stacked">Career Objective</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="Institute Of Engineering Technology"></ion-input>      
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Current Need</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="2020"></ion-input>      
+          </div>
+  
+          <div class="form-group">
+            <ion-label position="stacked">Career Preparation & Development</ion-label>            
+            <ion-input type="text" class="form-control" id="" placeholder="2020"></ion-input>      
+          </div>
+
+        </div>
+      </div>
+
+      <button type="submit" class="gradient-btn ion-activatable ripple-parent">NEXT
+        <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+      </button> 
+    </form>
+  </div>
+</ion-content>

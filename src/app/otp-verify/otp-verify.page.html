@@ -1,0 +1,44 @@
+
+<ion-content>
+  <main class="log_s">
+      <div>
+        <img src="assets/images/phone_PNG48988.png" alt="">
+      </div>
+  </main>
+  <section class="frm_det" *ngIf="hide_show_page">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="input">
+          <div class="form-group">
+            <ion-label position="stacked">Your Phone Number</ion-label>
+            <ion-input type="tel" class="form-control input-group" maxlength="10" [(ngModel)]="number" name="number" style="--padding-start: 10px;"></ion-input>
+            <p class="text-light">We will send you a one time OTP in your number</p>       
+          </div>
+          <div class="sub_bttn">
+             <a (click)="getNumber()"><img src="assets/images/icon-ios7-arrow-forward-512.webp" alt=""></a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+  <section class="ion-padding" *ngIf="!hide_show_page">
+    <div class="otp-text">
+      <h6>Please enter the verification code.</h6>
+      <p class="text-light1">We have sent a verification code to your registered Phone No.</p>
+    </div>
+    <div class="otp-boxes">
+      <form>
+        <ion-col size="12" class="form_container">
+          <div id="divOuter">
+            <div id="divInner">
+              <ion-input no-padding id="partitioned" maxlength="4" type="tel" required [(ngModel)]="get_otp" name="get_otp"></ion-input>
+            </div>
+          </div>
+        </ion-col>
+        <button type="submit" class="gradient-btn ion-activatable ripple-parent" (click)="submit()">Submit
+          <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+        </button> 
+      </form>
+    </div>
+  </section>
+</ion-content>

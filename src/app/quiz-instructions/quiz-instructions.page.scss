@@ -1,0 +1,14 @@
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+.quiz-title{position: relative; text-align: center; display: inline-block;     padding: 10px 0;}
+.quiz-title img{position: absolute; left: -40px;}
+
+.instructions{
+    background-image: url('../../assets/images/quiz-instructions.png');
+    background-size: cover;
+    padding: 55vh 30px 20px;
+}
+.instructions h6{margin: 40px 0;}

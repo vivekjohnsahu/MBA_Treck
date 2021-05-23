@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="cart-items">
+    <ion-card class="cart-card card">      
+      <img src="/assets/images/mock-interview.png">
+      <div class="cart-block-text">      
+        <div class="quantity">
+          <form>
+            <button id="decrease" (click)="decVal()">-</button>
+            <ion-input type="number" [value]="input_val" min="1" class=""></ion-input>
+            <button id="increase" (click)="incVal()">+</button>
+          </form>
+        </div>
+        <h6>Mock Interview</h6>
+        <p class="text-light italic">Lorem Ipsum is simply dummy text of the printing.</p>
+        <h4 class="price">₹ 3500</h4>
+        <a href="" class="text-light">Remove</a>
+      </div>
+    </ion-card>
+
+    <ion-card class="cart-card card">
+      <img src="/assets/images/mock-interview.png">
+      <div class="cart-block-text">      
+        <div class="quantity">
+          <form>
+            <button id="decrease">-</button>
+            <ion-input type="number" value="1" min="1" clearOnEdit="false" raedOnly></ion-input>
+            <button id="increase">+</button>
+          </form>
+        </div>
+        <h6>Mock Interview</h6>
+        <p class="text-light italic">Lorem Ipsum is simply dummy text of the printing.</p>
+        <h4 class="price">₹ 3500</h4>
+        <a href="" class="text-light">Remove</a>
+      </div>
+    </ion-card>
+  </div>
+
+  <div class="subtotal">
+    <button class="toggle-btn" id="toggle-btn"><ion-icon name="chevron-down-outline"></ion-icon></button>
+    <ion-card class="card">
+      <ion-item-divider>
+        <p>Subtotal (<span>2</span> item)</p>
+        <p slot="end">₹ 7000</p>
+      </ion-item-divider>
+
+      <div id="subtotal-details">
+        <ion-item-divider>
+          <p>Mock Interview</p>
+          <p slot="end">₹ 3500</p>
+        </ion-item-divider>
+
+        <ion-item-divider>
+          <p>Mock Interview</p>
+          <p slot="end">₹ 3500</p>
+        </ion-item-divider>
+
+        <ion-item-divider>
+          <p>Promo Code</p>
+          <p slot="end"><a href="" class="" class="text-blue">Apply Code</a></p>
+        </ion-item-divider>
+
+        <ion-item-divider>
+          <p>Discount</p>
+          <p slot="end">0%</p>
+        </ion-item-divider>
+
+        <ion-item-divider>
+          <p>GST</p>
+          <p slot="end">₹ 26.0</p>
+        </ion-item-divider>
+
+        <ion-item-divider>
+          <p class="text-primary">Total</p>
+          <p slot="end" class="text-primary">₹ 7000</p>
+        </ion-item-divider>
+      </div>
+
+      <button type="submit" class="gradient-btn ion-activatable ripple-parent">CHECKOUT
+        <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+      </button> 
+    </ion-card>
+  </div>
+</ion-content>
